@@ -10,7 +10,7 @@
       "title": "AI-Powered Educational Presenter",
       "category": "educational",
       "sourceFile": "01.mp4",
-      "publishedFile": "ai-educational-presenter.mp4",
+      "publishedFile": "ai-powered-educational-presenter.mp4",
       "status": "selected"
     },
     {
@@ -18,7 +18,7 @@
       "title": "Cultural Cinematic Visual Story",
       "category": "cinematic",
       "sourceFile": "07.MP4",
-      "publishedFile": "cultural-cinematic-story.mp4",
+      "publishedFile": "cultural-cinematic-visual-story.MP4",
       "status": "selected"
     },
     {
@@ -26,7 +26,7 @@
       "title": "AI Character Storytelling Experience",
       "category": "character",
       "sourceFile": "157.mp4",
-      "publishedFile": "ai-character-storytelling.mp4",
+      "publishedFile": "ai-character-storytelling-experience.mp4",
       "status": "selected"
     },
     {
@@ -34,7 +34,7 @@
       "title": "Interactive Children’s Learning Experience",
       "category": "edtech",
       "sourceFile": "84.mp4",
-      "publishedFile": "interactive-childrens-learning.mp4",
+      "publishedFile": "interactive-childrens-learning-experience.mp4",
       "status": "selected"
     },
     {
@@ -50,7 +50,7 @@
       "title": "Cinematic Luxury Product Showcase",
       "category": "product",
       "sourceFile": "نسخة من 06.mp4",
-      "publishedFile": "cinematic-luxury-product.mp4",
+      "publishedFile": "cinematic-luxury-product-showcase.mp4",
       "status": "selected"
     },
     {
@@ -58,7 +58,7 @@
       "title": "Natural Product Advertising Experience",
       "category": "advertising",
       "sourceFile": "نسخة من 118.mp4",
-      "publishedFile": "natural-product-advertising.mp4",
+      "publishedFile": "natural-product-advertising-experience.mp4",
       "status": "selected"
     },
     {
@@ -66,7 +66,7 @@
       "title": "Arabic Educational Awareness Story",
       "category": "educational",
       "sourceFile": "نسخة من 13.MP4",
-      "publishedFile": "arabic-educational-awareness-story.mp4",
+      "publishedFile": "arabic-educational-awareness-story.MP4",
       "status": "selected"
     }
   ],
