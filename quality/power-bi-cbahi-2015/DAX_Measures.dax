@@ -1,0 +1,32 @@
+Admissions =
+SUM ( Fact_PatientAffairs_Monthly[Admissions] )
+
+Discharges =
+SUM ( Fact_PatientAffairs_Monthly[Discharges] )
+
+Transfers =
+SUM ( Fact_PatientAffairs_Monthly[Transfers] )
+
+Avg Daily Census =
+AVERAGE ( Fact_PatientAffairs_Monthly[AvgDailyCensus] )
+
+Average LOS =
+DIVIDE (
+    SUMX ( Fact_PatientAffairs_Monthly, Fact_PatientAffairs_Monthly[AvgLOS_Days] * Fact_PatientAffairs_Monthly[Discharges] ),
+    [Discharges]
+)
+
+Net Patient Flow =
+[Admissions] - [Discharges]
+
+Discharge Admission Ratio =
+DIVIDE ( [Discharges], [Admissions] )
+
+Transfer Rate =
+DIVIDE ( [Transfers], [Admissions] )
+
+Data Completeness % =
+DIVIDE ( SUMX ( Fact_PatientAffairs_Monthly, Fact_PatientAffairs_Monthly[DataCompletenessPct] ), COUNTROWS ( Fact_PatientAffairs_Monthly ) ) / 100
+
+Flow Status =
+SWITCH ( TRUE(), ABS([Net Patient Flow]) <= 10, "Balanced", [Net Patient Flow] > 10, "Admissions > Discharges", "Discharges > Admissions" )
