@@ -25,6 +25,81 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 @media(max-width:850px){.herogrid,.case{grid-template-columns:1fr}.cards,.evidence{grid-template-columns:1fr 1fr}.portrait{min-height:280px}.navlinks{display:none}h1{font-size:40px}.head{display:block}}
 @media(max-width:560px){.cards,.evidence,.metricrow{grid-template-columns:1fr}.hero,.section{padding-left:18px;padding-right:18px}h1{font-size:34px}.portrait{min-height:240px}}
 @media print{.nav,.toolbar{display:none}.hero,.section{padding:34px 22px}.card,.tl{break-inside:avoid}body{background:#fff}.footer{background:#fff;color:#555;border-top:1px solid #ddd}.footer b{color:#111}}
+.project-link{color:inherit;text-decoration:none;transition:.18s ease;cursor:pointer}.project-link:hover{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 12px 30px #0b223912}.project-link:focus-visible{outline:3px solid #d2aa4766;outline-offset:3px}
+/* FINAL-PROJECT-INDEX-QA */
+.project-premium{
+  align-items:stretch;
+}
+.project-index{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:22px;
+  min-width:0;
+}
+.project-index > div{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+}
+.project-index small{
+  display:block;
+  min-height:28px;
+  line-height:1.35;
+  letter-spacing:.35px;
+}
+.project-index b{
+  display:block;
+  margin:0;
+  line-height:1;
+}
+.project-index > a{
+  display:block;
+  width:100%;
+  margin-top:auto;
+  overflow-wrap:anywhere;
+}
+.project-index > a strong{
+  display:block;
+  line-height:1.25;
+}
+
+@media (max-width:900px){
+  .project-premium{
+    grid-template-columns:1fr!important;
+  }
+  .project-index{
+    min-height:auto!important;
+    padding:24px!important;
+    gap:16px;
+  }
+  .project-index > div{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+  }
+  .project-index small{
+    min-height:0;
+    max-width:72%;
+  }
+  .project-index b{
+    flex:0 0 auto;
+  }
+  .project-index > a{
+    margin-top:4px;
+  }
+}
+
+@media (max-width:560px){
+  .project-index > div{
+    align-items:flex-start;
+  }
+  .project-index small{
+    max-width:68%;
+  }
+}
 </style>
 <style>
 .executive-ribbon{background:linear-gradient(90deg,#0b2239,#0d5c51);color:#fff;padding:10px 28px;text-align:center;font-weight:800;letter-spacing:.3px}
@@ -40,9 +115,10 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 .mvp-note{margin-top:18px;background:#fff8e8;border:1px solid #ead7a2;border-radius:15px;padding:15px;color:#6e581e}
 @media(max-width:900px){.arch-grid{grid-template-columns:repeat(3,1fr)}.project-premium,.evidence-map{grid-template-columns:1fr}.project-index{min-height:130px}.project-flow{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.arch-grid,.project-flow{grid-template-columns:1fr}}
+.project-link{color:inherit;text-decoration:none;transition:.18s ease;cursor:pointer}.project-link:hover{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 12px 30px #0b223912}.project-link:focus-visible{outline:3px solid #d2aa4766;outline-offset:3px}
 </style>
 </head><body>
-<nav class="nav"><div class="shell navin"><div class="brand"><div class="mark"></div><div><b>Ashraf Mohamed Taha</b><small>MAOS · Executive Professional Brand</small></div></div>
+<nav class="nav"><div class="shell navin"><div class="brand"><div class="mark"></div><div><b>Ashraf Mohamed Taha</b><small>Executive Professional Portfolio</small></div></div>
 <div class="navlinks"><a href="#about">الملف</a><a href="#expertise">الخبرات</a><a href="#experience">المسيرة</a><a href="#work">الأدلة</a></div></div></nav>
 <div class="executive-ribbon">AI SOLUTIONS & SYSTEMS PORTFOLIO · V2 EXECUTIVE PREMIUM · Systems • AI • Digital Products • Data</div><header class="hero"><div class="shell herogrid"><div><div class="eyebrow">AI SOLUTIONS & SYSTEMS PORTFOLIO</div><h1>أشرف محمد طه<span>AI SOLUTIONS &amp; SYSTEMS ANALYST</span></h1><p class="lead">Portfolio رقمي يركز على النظم والذكاء الاصطناعي والمنتجات الرقمية والبيانات من خلال أربعة مشروعات موثقة: Al-Ataa ERP، CP04، Nukhba Al-Qudurat وMedical Records Analytics.</p>
 <div class="formula">Systems Thinking • AI Solutions • Digital Products • Data</div></div>
@@ -52,8 +128,8 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 <div class="case"><div class="card heroCard"><div class="num">FLAGSHIP · ENTERPRISE SYSTEMS</div><h3>Al-Ataa ERP</h3><p>ERP عربي للقطاع غير الربحي، يغطي الوحدات التشغيلية والرقابية ويحوّل المتطلبات إلى تجربة مؤسسية مترابطة.</p><div class="chips"><span class="chip">Systems Analysis</span><span class="chip">Solution Design</span><span class="chip">Enterprise UX</span></div></div>
 <div class="card"><div class="num">AI · AGENTIC WORKFLOW</div><h3>CP04 - AI Grant Assistant</h3><p>نموذج Agentic Workflow من ثماني مراحل مع Validation وStructured State وHuman Approval Gate.</p><div class="chips"><span class="chip">AI Solutions</span><span class="chip">Orchestration</span><span class="chip">Human-in-the-loop</span></div></div></div></div></section>
 <section id="expertise" class="section"><div class="shell"><div class="head"><div><div class="eyebrow">02 / Selected Work</div><h2>Digital Product & Data</h2></div><p>مشروعات تكمل صورة تحليل النظم والحلول الرقمية.</p></div><div class="case">
-<div class="card"><div class="num">EDTECH · DIGITAL PRODUCT</div><h3>Nukhba Al-Qudurat</h3><p>منتج تعليمي تفاعلي يضم بنكًا موثقًا من 600 سؤال، خطة 30 جلسة، اختبارًا تفاعليًا ولوحة متابعة أداء.</p><div class="chips"><span class="chip">Product Design</span><span class="chip">UX/UI</span><span class="chip">Frontend Logic</span></div></div>
-<div class="card"><div class="num">DATA · HEALTHCARE</div><h3>Medical Records Analytics</h3><p>تحليل وإعداد تقارير تشغيلية صحية باستخدام Excel/VBA؛ العرض ببيانات Synthetic للحفاظ على الخصوصية.</p><div class="chips"><span class="chip">Excel/VBA</span><span class="chip">Healthcare Analytics</span><span class="chip">Automation</span></div></div></div></div></section>
+<a class="card project-link" href="nukhba-maos.html"><div class="num">EDTECH · DIGITAL PRODUCT</div><h3>Nukhba Al-Qudurat</h3><p>منتج تعليمي تفاعلي يضم بنكًا موثقًا من 600 سؤال، خطة 30 جلسة، اختبارًا تفاعليًا ولوحة متابعة أداء.</p><div class="chips"><span class="chip">Product Design</span><span class="chip">UX/UI</span><span class="chip">Frontend Logic</span></div></div>
+<a class="card project-link" href="medical-records-functional-mvp.html"><div class="num">DATA · HEALTHCARE</div><h3>Medical Records Analytics</h3><p>تحليل وإعداد تقارير تشغيلية صحية باستخدام Excel/VBA؛ العرض ببيانات Synthetic للحفاظ على الخصوصية.</p><div class="chips"><span class="chip">Excel/VBA</span><span class="chip">Healthcare Analytics</span><span class="chip">Automation</span></div></div></div></div></section>
 <section id="experience" class="section alt"><div class="shell"><div class="head"><div><div class="eyebrow">03 / Method</div><h2>من المتطلبات إلى نموذج قابل للاختبار</h2></div><p>المنهج المعروض يعكس نفس التموضع الأصلي دون إضافة ادعاءات جديدة.</p></div><div class="cards">
 <div class="card"><div class="num">01</div><h3>Analyze</h3><p>فهم الاحتياجات والعمليات والمتطلبات.</p></div><div class="card"><div class="num">02</div><h3>Structure</h3><p>تنظيم Workflows والأدوار والمخرجات.</p></div><div class="card"><div class="num">03</div><h3>Prototype</h3><p>تحويل الحل إلى تجربة تفاعلية قابلة للفحص.</p></div><div class="card"><div class="num">04</div><h3>Validate</h3><p>تحقق وأدلة وموافقة بشرية ضمن سير العمل.</p></div></div></div></section>
 <section id="work" class="section"><div class="shell"><div class="head"><div><div class="eyebrow">04 / Professional Foundation</div><h2>قاعدة مهنية تدعم المرحلة التقنية</h2></div><p>الخبرة الصحية والجودة والبيانات والتواصل تمثل أساسًا مهنيًا داعمًا للمشروعات التقنية الحديثة.</p></div><div class="timeline"><div class="tl"><div class="top"><h3>Project-Based Digital & AI Work</h3><span class="date">2021 - Present</span></div><p>تصميم منتجات وتجارب رقمية متكاملة، وتوظيف AI في التحليل والتطوير والتحقق من جودة الحلول، وتحليل الاحتياجات والعمليات وتصميم حلول رقمية وWorkflows وتقارير.</p></div></div></div></section>
@@ -83,7 +159,7 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 <div class="project-premium"><div class="project-index"><div><small>AI · AGENTIC WORKFLOW</small><b>02</b></div><a href="cp04-mvp.html"><strong>CP04</strong></a></div>
 <div class="project-body"><h3>CP04 — AI Grant Assistant</h3><p>نموذج Agentic Workflow من ثماني مراحل مع Validation وStructured State وHuman Approval Gate.</p>
 <div class="project-flow"><div class="pf"><b>INPUT</b>Project Data</div><div class="pf"><b>LOGIC</b>8-stage Workflow</div><div class="pf"><b>CONTROL</b>Validation</div><div class="pf"><b>GATE</b>Human Approval</div></div>
-<div class="mvp-note"><b>Functional MVP:</b> المشروع لديه نموذج تشغيلي مستقل تم تطويره سابقًا؛ يمكن ربطه بهذه البطاقة عند تجهيز نسخة النشر النهائية.</div></div></div>
+<div class="mvp-note"><b>Functional MVP:</b> نموذج تشغيلي مستقل يدعم عرض منطق الحل وتجربة الاستخدام.</div></div></div>
 
 <div class="project-premium"><div class="project-index"><div><small>EDTECH · DIGITAL PRODUCT</small><b>03</b></div><a href="nukhba-maos.html"><strong>Nukhba</strong></a></div>
 <div class="project-body"><h3>Nukhba Al-Qudurat</h3><p>منتج تعليمي تفاعلي يجمع بين التخطيط للتعلم، بنك الأسئلة، الاختبارات وقياس الأداء.</p>
@@ -111,7 +187,22 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 <div class="chips"><span class="chip">Requirements</span><span class="chip">Workflows</span><span class="chip">AI</span><span class="chip">UX/UI</span><span class="chip">Prototyping</span><span class="chip">Data</span><span class="chip">Validation</span></div>
 <p style="margin-top:22px">القاعدة المهنية السابقة في الرعاية الصحية والجودة والبيانات والتواصل تدعم فهم العمليات والاحتياجات، بينما تمثل المشروعات الرقمية منذ 2021 طبقة التطبيق التقني الحديثة.</p></div>
 </div></div></section>
-<footer class="footer"><div class="shell"><div><b>Ashraf Mohamed Taha</b><br>Systems • AI • Digital Products • Data</div><div>© 2026 · MAOS Master Visual System</div></div></footer>
+<section class="section alt" id="creative-ai">
+<div class="shell">
+<div class="head">
+<div>
+<div class="eyebrow">CREATIVE AI &amp; MULTIMEDIA</div>
+<h2>8 Selected Video Projects</h2>
+</div>
+<p>مجموعة مختارة من ثمانية مشاريع مرئية توضح تطبيقات الذكاء الاصطناعي الإبداعي في التعليم، التوعية، السرد البصري وتجارب المنتجات.</p>
+</div>
+<a class="card project-link" href="creative-ai.html">
+<div class="num">CREATIVE AI · MULTIMEDIA · 8 VIDEOS</div>
+<h3>Creative AI &amp; Multimedia</h3>
+<p>استعراض مكتبة المشاريع المرئية الثمانية من خلال عارض المشاريع الحالي.</p>
+</a>
+</div>
+</section><footer class="footer"><div class="shell"><div><b>Ashraf Mohamed Taha</b><br>Systems • AI • Digital Products • Data</div><div>© 2026 · MAOS Master Visual System</div></div></footer>
 <div class="toolbar"><button class="tool" onclick="window.print()">طباعة / PDF</button><button class="tool gold" onclick="savePage()">حفظ نسخة HTML</button></div>
 <script>
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const x=document.querySelector(a.getAttribute('href'));if(x){e.preventDefault();x.scrollIntoView({behavior:'smooth'})}}));

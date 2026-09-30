@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Creative AI | Project Viewer</title>
+<style>
+:root{--navy:#0b2239;--teal:#079b87;--gold:#d2aa47;--line:#dce6e5;--surface:#f6f9f9}*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Arabic",sans-serif;color:var(--navy);background:#fff}.shell{max-width:1100px;margin:auto;padding:28px}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{font-weight:800}.back{color:var(--navy);text-decoration:none;border:1px solid var(--line);padding:10px 14px;border-radius:12px}.eyebrow{display:inline-block;margin-top:28px;padding:6px 10px;border-radius:999px;background:#fff7df;border:1px solid #ecd28c;color:#806016;font-size:12px;font-weight:800;text-transform:uppercase}.viewer{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px}.viewer video{display:block;width:100%;max-height:68vh;background:#000;border-radius:14px}.meta{padding:18px 4px 4px}.meta h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}.meta p{margin:0;color:#526878}.status{padding:28px;text-align:center;color:#526878}@media(max-width:650px){.shell{padding:18px}.top{align-items:flex-start;flex-direction:column}.viewer{padding:10px}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <header class="top"><div><div class="brand">Ashraf Mohamed Taha</div><small>AI Solutions &amp; Systems Analyst · Creative AI Portfolio</small></div><a class="back" href="../../../ai/creative-ai.html">← Creative AI Portfolio</a></header>
+  <div id="app" class="status">Loading project…</div>
+</main>
+<script>
+(async()=>{
+ const app=document.getElementById('app');
+ const id=new URLSearchParams(location.search).get('id');
+ if(!id){app.textContent='Project id is missing.';return;}
+ try{
+  const res=await fetch('media-manifest.json',{cache:'no-store'});
+  if(!res.ok)throw new Error('Manifest unavailable');
+  const data=await res.json();
+  const p=data.projects.find(x=>x.id===id&&x.status==='selected');
+  if(!p){app.textContent='Project not found.';return;}
+  document.title=p.title+' | Creative AI Portfolio';
+  app.className='';
+  app.innerHTML=`<span class="eyebrow">${p.category}</span><section class="viewer"><video controls preload="metadata" playsinline><source src="${encodeURI(p.publishedFile)}" type="video/mp4">Your browser does not support HTML5 video.</video><div class="meta"><h1>${p.title}</h1><p>Selected professional creative AI and multimedia project.</p></div></section>`;
+ }catch(e){app.textContent='The project viewer is ready, but the media manifest or published asset is not available yet.';}
+})();
+</script>
+</body>
+</html>

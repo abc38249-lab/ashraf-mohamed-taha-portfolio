@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Creative AI & Multimedia | Ashraf Mohamed Taha</title>
+<style>:root{--n:#0b2239;--t:#079b87;--g:#d2aa47;--p:#f5f8f8;--l:#dce7e5;--m:#667785}*{box-sizing:border-box}body{margin:0;font-family:Arial,"Segoe UI",sans-serif;background:var(--p);color:var(--n)}.shell{max-width:1180px;margin:auto;padding:42px 24px}.top{background:linear-gradient(135deg,#fff,#edf8f5);border-bottom:1px solid var(--l)}.ey{display:inline-block;background:#fff4d6;border:1px solid #ead7a2;color:#806016;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:900}h1{font-size:42px;margin:16px 0 8px}p{color:var(--m);line-height:1.7}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}.card{background:#fff;border:1px solid var(--l);border-top:4px solid var(--t);border-radius:18px;padding:22px;display:flex;flex-direction:column;min-height:220px}.cat{color:var(--g);font-size:11px;font-weight:900;text-transform:uppercase}.card h2{font-size:19px;line-height:1.35}.open{margin-top:auto;display:inline-block;text-decoration:none;background:var(--t);color:#fff;padding:10px 14px;border-radius:10px;font-weight:800;text-align:center}.back{display:inline-block;margin-top:28px;color:var(--t);text-decoration:none;font-weight:800}.note{margin-top:24px;background:#fff8e8;border:1px solid #ead7a2;border-radius:14px;padding:14px;color:#6e581e}@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:32px}}</style></head>
+<body><header class="top"><div class="shell"><span class="ey">CREATIVE AI & MULTIMEDIA</span><h1>8 Selected Video Projects</h1><p>A curated collection of applied generative-AI and multimedia work. Project cards are generated from one data list so items can be added, edited, hidden, replaced or reordered without rebuilding the page.</p></div></header><main class="shell"><div id="grid" class="grid"></div><div class="note">Modular Content Architecture: edit the project list below to manage this collection. Video files remain separate from presentation logic.</div><a class="back" href="portfolio.html">← AI Solutions & Systems Portfolio</a></main>
+<script>
+const projects=[
+{id:'ai-educational-presenter',title:'AI-Powered Educational Presenter',category:'Educational'},
+{id:'cultural-cinematic-story',title:'Cultural Cinematic Visual Story',category:'Cinematic'},
+{id:'ai-character-storytelling',title:'AI Character Storytelling Experience',category:'Character'},
+{id:'interactive-childrens-learning',title:'Interactive Children’s Learning Experience',category:'EdTech'},
+{id:'health-awareness-character-story',title:'Health Awareness Character Story',category:'Awareness'},
+{id:'cinematic-luxury-product',title:'Cinematic Luxury Product Showcase',category:'Product'},
+{id:'natural-product-advertising',title:'Natural Product Advertising Experience',category:'Advertising'},
+{id:'arabic-educational-awareness-story',title:'Arabic Educational Awareness Story',category:'Educational'}
+];
+const viewer='../quality/media/creative/project-viewer.html?id=';
+document.getElementById('grid').innerHTML=projects.map((p,i)=>`<article class="card"><span class="cat">${String(i+1).padStart(2,'0')} · ${p.category}</span><h2>${p.title}</h2><p>Selected Creative AI & Multimedia project.</p><a class="open" href="${viewer}${encodeURIComponent(p.id)}">Open Video Project</a></article>`).join('');
+</script></body></html>

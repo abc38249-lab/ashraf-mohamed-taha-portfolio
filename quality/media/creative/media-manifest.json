@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0",
+  "track": "quality",
+  "collection": "AI Creative & Multimedia Applications",
+  "basePath": "media/creative/",
+  "notes": "P05.2 safe media mapping. CV files are outside this structure and are not modified.",
+  "projects": [
+    {
+      "id": "ai-educational-presenter",
+      "title": "AI-Powered Educational Presenter",
+      "category": "educational",
+      "sourceFile": "01.mp4",
+      "publishedFile": "ai-powered-educational-presenter.mp4",
+      "status": "selected"
+    },
+    {
+      "id": "cultural-cinematic-story",
+      "title": "Cultural Cinematic Visual Story",
+      "category": "cinematic",
+      "sourceFile": "07.MP4",
+      "publishedFile": "cultural-cinematic-visual-story.MP4",
+      "status": "selected"
+    },
+    {
+      "id": "ai-character-storytelling",
+      "title": "AI Character Storytelling Experience",
+      "category": "character",
+      "sourceFile": "157.mp4",
+      "publishedFile": "ai-character-storytelling-experience.mp4",
+      "status": "selected"
+    },
+    {
+      "id": "interactive-childrens-learning",
+      "title": "Interactive Children’s Learning Experience",
+      "category": "edtech",
+      "sourceFile": "84.mp4",
+      "publishedFile": "interactive-childrens-learning-experience.mp4",
+      "status": "selected"
+    },
+    {
+      "id": "health-awareness-character-story",
+      "title": "Health Awareness Character Story",
+      "category": "awareness",
+      "sourceFile": "31.mp4",
+      "publishedFile": "health-awareness-character-story.mp4",
+      "status": "selected"
+    },
+    {
+      "id": "cinematic-luxury-product",
+      "title": "Cinematic Luxury Product Showcase",
+      "category": "product",
+      "sourceFile": "نسخة من 06.mp4",
+      "publishedFile": "cinematic-luxury-product-showcase.mp4",
+      "status": "selected"
+    },
+    {
+      "id": "natural-product-advertising",
+      "title": "Natural Product Advertising Experience",
+      "category": "advertising",
+      "sourceFile": "نسخة من 118.mp4",
+      "publishedFile": "natural-product-advertising-experience.mp4",
+      "status": "selected"
+    },
+    {
+      "id": "arabic-educational-awareness-story",
+      "title": "Arabic Educational Awareness Story",
+      "category": "educational",
+      "sourceFile": "نسخة من 13.MP4",
+      "publishedFile": "arabic-educational-awareness-story.MP4",
+      "status": "selected"
+    }
+  ],
+  "reserve": [
+    "28.MP4",
+    "84(1).mp4",
+    "تعليمي 2.mp4",
+    "نسخة من 02.mp4",
+    "نسخة من 12.mp4",
+    "نسخة من 122.mp4"
+  ]
+}
