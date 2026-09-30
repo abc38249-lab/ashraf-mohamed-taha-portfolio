@@ -117,6 +117,133 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 @media(max-width:560px){.arch-grid,.project-flow{grid-template-columns:1fr}}
 .project-link{color:inherit;text-decoration:none;transition:.18s ease;cursor:pointer}.project-link:hover{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 12px 30px #0b223912}.project-link:focus-visible{outline:3px solid #d2aa4766;outline-offset:3px}
 </style>
+
+<style id="FINAL-AI-PORTFOLIO-CARDS-V2">
+/*
+ MAOS — AI Portfolio card refinement
+ Improves alignment, spacing and responsive consistency.
+*/
+
+.project-index{
+    align-items:stretch;
+}
+
+.project-index > *,
+.project-premium{
+    min-width:0;
+}
+
+.project-premium{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    padding:clamp(22px,2.4vw,32px);
+}
+
+.project-premium h3{
+    margin-top:0;
+    line-height:1.35;
+    text-wrap:balance;
+    overflow-wrap:normal;
+    word-break:normal;
+}
+
+.project-premium p{
+    line-height:1.8;
+    text-wrap:pretty;
+}
+
+.project-premium .btn,
+.project-premium a.btn{
+    margin-top:auto;
+    align-self:flex-start;
+}
+
+@media(min-width:901px){
+    .project-index{
+        grid-auto-rows:1fr;
+    }
+}
+
+@media(max-width:900px){
+    .project-index{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:18px;
+    }
+
+    .project-premium{
+        padding:22px;
+    }
+}
+
+@media(max-width:560px){
+    .project-index{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .project-premium{
+        padding:20px;
+    }
+
+    .project-premium h3{
+        font-size:1.08rem;
+    }
+
+    .project-premium .btn,
+    .project-premium a.btn{
+        width:100%;
+        justify-content:center;
+        text-align:center;
+    }
+}
+</style>
+
+<style id="MAOS-FINAL-CREATIVE-SECTION-CLEANUP">
+/*
+ MAOS FINAL CREATIVE SECTION CLEANUP
+ Scope: Creative AI / Selected Video Projects section only.
+ Prevents decorative fragments from appearing clipped at
+ the right edge while preserving the Master Visual System.
+*/
+
+.creative-showcase,
+.creative-section,
+.creative-ai-section,
+.video-projects-section{
+    overflow:hidden;
+    isolation:isolate;
+}
+
+/*
+ Decorative pseudo-elements in this section are suppressed
+ where they render as detached/clipped side fragments.
+*/
+.creative-showcase::before,
+.creative-showcase::after,
+.creative-section::before,
+.creative-section::after,
+.creative-ai-section::before,
+.creative-ai-section::after,
+.video-projects-section::before,
+.video-projects-section::after{
+    display:none !important;
+    content:none !important;
+}
+
+/*
+ Preserve clean heading/card geometry.
+*/
+.creative-showcase > *,
+.creative-section > *,
+.creative-ai-section > *,
+.video-projects-section > *{
+    position:relative;
+    z-index:1;
+    min-width:0;
+}
+
+</style>
 </head><body>
 <nav class="nav"><div class="shell navin"><div class="brand"><div class="mark"></div><div><b>Ashraf Mohamed Taha</b><small>Executive Professional Portfolio</small></div></div>
 <div class="navlinks"><a href="#about">الملف</a><a href="#expertise">الخبرات</a><a href="#experience">المسيرة</a><a href="#work">الأدلة</a></div></div></nav>
@@ -128,8 +255,8 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 <div class="case"><div class="card heroCard"><div class="num">FLAGSHIP · ENTERPRISE SYSTEMS</div><h3>Al-Ataa ERP</h3><p>ERP عربي للقطاع غير الربحي، يغطي الوحدات التشغيلية والرقابية ويحوّل المتطلبات إلى تجربة مؤسسية مترابطة.</p><div class="chips"><span class="chip">Systems Analysis</span><span class="chip">Solution Design</span><span class="chip">Enterprise UX</span></div></div>
 <div class="card"><div class="num">AI · AGENTIC WORKFLOW</div><h3>CP04 - AI Grant Assistant</h3><p>نموذج Agentic Workflow من ثماني مراحل مع Validation وStructured State وHuman Approval Gate.</p><div class="chips"><span class="chip">AI Solutions</span><span class="chip">Orchestration</span><span class="chip">Human-in-the-loop</span></div></div></div></div></section>
 <section id="expertise" class="section"><div class="shell"><div class="head"><div><div class="eyebrow">02 / Selected Work</div><h2>Digital Product & Data</h2></div><p>مشروعات تكمل صورة تحليل النظم والحلول الرقمية.</p></div><div class="case">
-<a class="card project-link" href="nukhba-maos.html"><div class="num">EDTECH · DIGITAL PRODUCT</div><h3>Nukhba Al-Qudurat</h3><p>منتج تعليمي تفاعلي يضم بنكًا موثقًا من 600 سؤال، خطة 30 جلسة، اختبارًا تفاعليًا ولوحة متابعة أداء.</p><div class="chips"><span class="chip">Product Design</span><span class="chip">UX/UI</span><span class="chip">Frontend Logic</span></div></div>
-<a class="card project-link" href="medical-records-functional-mvp.html"><div class="num">DATA · HEALTHCARE</div><h3>Medical Records Analytics</h3><p>تحليل وإعداد تقارير تشغيلية صحية باستخدام Excel/VBA؛ العرض ببيانات Synthetic للحفاظ على الخصوصية.</p><div class="chips"><span class="chip">Excel/VBA</span><span class="chip">Healthcare Analytics</span><span class="chip">Automation</span></div></div></div></div></section>
+<a class="card project-link" href="nukhba-maos.html"><div class="num">EDTECH · DIGITAL PRODUCT</div><h3>Nukhba Al-Qudurat</h3><p>منتج تعليمي تفاعلي يضم بنكًا موثقًا من 600 سؤال، خطة 30 جلسة، اختبارًا تفاعليًا ولوحة متابعة أداء.</p><div class="chips"><span class="chip">Product Design</span><span class="chip">UX/UI</span><span class="chip">Frontend Logic</span></div></a>
+<a class="card project-link" href="medical-records-functional-mvp.html"><div class="num">DATA · HEALTHCARE</div><h3>Medical Records Analytics</h3><p>تحليل وإعداد تقارير تشغيلية صحية باستخدام Excel/VBA؛ العرض ببيانات Synthetic للحفاظ على الخصوصية.</p><div class="chips"><span class="chip">Excel/VBA</span><span class="chip">Healthcare Analytics</span><span class="chip">Automation</span></div></a></div></div></section>
 <section id="experience" class="section alt"><div class="shell"><div class="head"><div><div class="eyebrow">03 / Method</div><h2>من المتطلبات إلى نموذج قابل للاختبار</h2></div><p>المنهج المعروض يعكس نفس التموضع الأصلي دون إضافة ادعاءات جديدة.</p></div><div class="cards">
 <div class="card"><div class="num">01</div><h3>Analyze</h3><p>فهم الاحتياجات والعمليات والمتطلبات.</p></div><div class="card"><div class="num">02</div><h3>Structure</h3><p>تنظيم Workflows والأدوار والمخرجات.</p></div><div class="card"><div class="num">03</div><h3>Prototype</h3><p>تحويل الحل إلى تجربة تفاعلية قابلة للفحص.</p></div><div class="card"><div class="num">04</div><h3>Validate</h3><p>تحقق وأدلة وموافقة بشرية ضمن سير العمل.</p></div></div></div></section>
 <section id="work" class="section"><div class="shell"><div class="head"><div><div class="eyebrow">04 / Professional Foundation</div><h2>قاعدة مهنية تدعم المرحلة التقنية</h2></div><p>الخبرة الصحية والجودة والبيانات والتواصل تمثل أساسًا مهنيًا داعمًا للمشروعات التقنية الحديثة.</p></div><div class="timeline"><div class="tl"><div class="top"><h3>Project-Based Digital & AI Work</h3><span class="date">2021 - Present</span></div><p>تصميم منتجات وتجارب رقمية متكاملة، وتوظيف AI في التحليل والتطوير والتحقق من جودة الحلول، وتحليل الاحتياجات والعمليات وتصميم حلول رقمية وWorkflows وتقارير.</p></div></div></div></section>
@@ -192,7 +319,7 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 <div class="head">
 <div>
 <div class="eyebrow">CREATIVE AI &amp; MULTIMEDIA</div>
-<h2>8 Selected Video Projects</h2>
+<h2>Selected Video Projects</h2>
 </div>
 <p>مجموعة مختارة من ثمانية مشاريع مرئية توضح تطبيقات الذكاء الاصطناعي الإبداعي في التعليم، التوعية، السرد البصري وتجارب المنتجات.</p>
 </div>
