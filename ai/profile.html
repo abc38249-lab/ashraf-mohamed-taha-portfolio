@@ -24,6 +24,54 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 @media(max-width:850px){.herogrid,.case{grid-template-columns:1fr}.cards,.evidence{grid-template-columns:1fr 1fr}.portrait{min-height:280px}.navlinks{display:none}h1{font-size:40px}.head{display:block}}
 @media(max-width:560px){.cards,.evidence,.metricrow{grid-template-columns:1fr}.hero,.section{padding-left:18px;padding-right:18px}h1{font-size:34px}.portrait{min-height:240px}}
 @media print{.nav,.toolbar{display:none}.hero,.section{padding:34px 22px}.card,.tl{break-inside:avoid}body{background:#fff}.footer{background:#fff;color:#555;border-top:1px solid #ddd}.footer b{color:#111}}
+.chain-row.project-link{color:inherit;text-decoration:none;transition:.18s ease;cursor:pointer}.chain-row.project-link:hover{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 12px 30px #0b223912}.chain-row.project-link:focus-visible{outline:3px solid #d2aa4766;outline-offset:3px}
+/* FINAL-AI-PROFILE-RESPONSIVE */
+.exec-map,
+.value-grid,
+.cards,
+.evidence{
+  min-width:0;
+}
+.exec-panel,
+.value,
+.card,
+.chain-row{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+
+@media (max-width:900px){
+  .exec-map{
+    grid-template-columns:1fr!important;
+  }
+  .exec-panel{
+    width:100%!important;
+    max-width:none!important;
+  }
+}
+
+@media (max-width:850px){
+  .herogrid{
+    grid-template-columns:1fr!important;
+  }
+  .portrait{
+    width:100%;
+    max-width:420px;
+    margin-inline:auto;
+  }
+}
+
+@media (max-width:560px){
+  .value-grid,
+  .cards,
+  .evidence{
+    grid-template-columns:1fr!important;
+  }
+  .section,
+  .hero{
+    overflow-x:hidden;
+  }
+}
 </style>
 <style>
 .executive-ribbon{background:linear-gradient(90deg,#0b2239,#0d5c51);color:#fff;padding:10px 28px;text-align:center;font-weight:800;letter-spacing:.3px}
@@ -32,9 +80,10 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 .chain{display:grid;gap:10px}.chain-row{display:grid;grid-template-columns:80px 1fr;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}.chain-row span:first-child{background:var(--navy);color:#fff;border-radius:10px;padding:7px;text-align:center;font-weight:900}
 .position{font-size:25px;font-weight:900;color:var(--navy);line-height:1.45}.goldline{border-inline-start:4px solid var(--gold);padding-inline-start:16px}
 @media(max-width:850px){.value-grid{grid-template-columns:1fr 1fr}.exec-map{grid-template-columns:1fr}}@media(max-width:560px){.value-grid{grid-template-columns:1fr}}
+.chain-row.project-link{color:inherit;text-decoration:none;transition:.18s ease;cursor:pointer}.chain-row.project-link:hover{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 12px 30px #0b223912}.chain-row.project-link:focus-visible{outline:3px solid #d2aa4766;outline-offset:3px}
 </style>
 </head><body>
-<nav class="nav"><div class="shell navin"><div class="brand"><div class="mark"></div><div><b>Ashraf Mohamed Taha</b><small>MAOS · Executive Professional Brand</small></div></div>
+<nav class="nav"><div class="shell navin"><div class="brand"><div class="mark"></div><div><b>Ashraf Mohamed Taha</b><small>Executive Professional Portfolio</small></div></div>
 <div class="navlinks"><a href="#about">الملف</a><a href="#expertise">الخبرات</a><a href="#experience">المسيرة</a><a href="#work">الأدلة</a></div></div></nav>
 <div class="executive-ribbon">AI SOLUTIONS & SYSTEMS ANALYST · PROFESSIONAL PROFILE V2 EXECUTIVE PREMIUM</div><header class="hero"><div class="shell herogrid"><div><div class="eyebrow">PROFESSIONAL PROFILE</div><h1>أشرف محمد طه<span>AI SOLUTIONS &amp; SYSTEMS ANALYST</span></h1><p class="lead">أحوّل الاحتياجات والعمليات المعقدة إلى حلول رقمية منظمة تجمع بين تحليل النظم، تجربة المستخدم، البيانات، والتطوير المدعوم بالذكاء الاصطناعي - من المتطلبات حتى النموذج التفاعلي والاستعداد للـMVP.</p>
 <div class="formula">Systems Thinking • AI Solutions • Digital Products • Data</div></div>
@@ -62,10 +111,10 @@ h1{font-size:52px;line-height:1.12;color:var(--navy);margin:18px 0}h1 span{displ
 </div></div></section>
 <section class="section" id="evidence-chain"><div class="shell"><div class="head"><div><div class="eyebrow">06 / Project Evidence</div><h2>أربعة مشروعات تدعم الهوية المهنية</h2></div><p>كل مشروع يثبت بعدًا مختلفًا من التموضع الحالي.</p></div>
 <div class="exec-map"><div class="exec-panel"><div class="chain">
-<div class="chain-row"><span>SYS</span><div><b>Al-Ataa ERP</b><br>Enterprise systems analysis and solution design.</div></div>
-<div class="chain-row"><span>AI</span><div><b>CP04</b><br>Agentic workflow، validation وHuman Approval Gate.</div></div>
-<div class="chain-row"><span>UX</span><div><b>Nukhba</b><br>EdTech product، assessment وperformance experience.</div></div>
-<div class="chain-row"><span>DATA</span><div><b>Healthcare Analytics</b><br>Operational analytics وExcel/VBA.</div></div>
+<a class="chain-row project-link" href="al-ataa-erp.html"><span>SYS</span><div><b>Al-Ataa ERP</b><br>Enterprise systems analysis and solution design.</div></a>
+<a class="chain-row project-link" href="cp04-mvp.html"><span>AI</span><div><b>CP04</b><br>Agentic workflow، validation وHuman Approval Gate.</div></a>
+<a class="chain-row project-link" href="nukhba-maos.html"><span>UX</span><div><b>Nukhba</b><br>EdTech product، assessment وperformance experience.</div></a>
+<a class="chain-row project-link" href="medical-records-functional-mvp.html"><span>DATA</span><div><b>Healthcare Analytics</b><br>Operational analytics وExcel/VBA.</div></div>
 </div></div><div class="exec-panel"><p class="position">AI SOLUTIONS<br>& SYSTEMS ANALYST</p><p class="goldline">Systems Thinking • AI Solutions • Digital Products • Data • Prototyping • Validation</p></div></div>
 </div></section><footer class="footer"><div class="shell"><div><b>Ashraf Mohamed Taha</b><br>Systems Thinking • AI Solutions • Practical Digital Products</div><div>© 2026 · MAOS Master Visual System</div></div></footer>
 <div class="toolbar"><button class="tool" onclick="window.print()">طباعة / PDF</button><button class="tool gold" onclick="savePage()">حفظ نسخة HTML</button></div>
